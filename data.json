@@ -1,0 +1,18 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "text": "Que te gustaria jugar?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Melee",
+          "question": "really dont",
+          "options": [
+            "ok"
+          ]
+        }
+      ]
+    }
+  ]
+}
