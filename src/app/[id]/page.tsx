@@ -9,11 +9,12 @@ export async function generateStaticParams() {
 }
 
 async function getData({ id }: { id: string }) {
-  return data.questions.find((question) => +question.id === +id);
+  return data.questions.find((question) => question.id === id);
 }
 
 export default async function Question({ params }: { params: { id: string } }) {
   const question = await getData({ id: params.id });
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-24 gap-y-20">
       <h1>{question?.text}</h1>
@@ -22,8 +23,13 @@ export default async function Question({ params }: { params: { id: string } }) {
           <a
             key={idx}
             href={option.nextQuestionId?.toString()}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            className={`group rounded-lg border-[15px] border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:${
+              option?.color || "border-green-500"
+            } hover:dark:bg-neutral-800/30`}
             rel="noopener noreferrer"
+            style={{
+              borderStyle: "groove",
+            }}
           >
             <h2 className="mb-3 text-2xl font-semibold text-center">
               {option.text}

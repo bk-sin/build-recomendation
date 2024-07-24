@@ -6,19 +6,23 @@
       "options": [
         {
           "text": "Melee",
-          "nextQuestionId": "do-you-really-not-like-it"
+          "nextQuestionId": "do-you-really-not-like-it",
+          "color": "border-green-500"
         },
         {
           "text": "Spell",
-          "nextQuestionId": "question-for-spell-option"
+          "nextQuestionId": "question-for-spell-option",
+          "color": "border-green-500"
         },
         {
           "text": "Minion",
-          "nextQuestionId": "question-for-minion-option"
+          "nextQuestionId": "question-for-minion-option",
+          "color": "border-green-500"
         },
         {
           "text": "Range",
-          "nextQuestionId": "question-for-range-option"
+          "nextQuestionId": "question-for-range-option",
+          "color": "border-green-500"
         }
       ]
     },
@@ -28,7 +32,8 @@
       "options": [
         {
           "text": "Ok",
-          "nextQuestionId": null
+          "nextQuestionId": null,
+          "color": "border-green-500"
         }
       ]
     },
@@ -38,11 +43,13 @@
       "options": [
         {
           "text": "Option 1",
-          "nextQuestionId": null
+          "nextQuestionId": null,
+          "color": "border-green-500"
         },
         {
           "text": "Option 2",
-          "nextQuestionId": null
+          "nextQuestionId": null,
+          "color": "border-green-500"
         }
       ]
     },
@@ -52,11 +59,13 @@
       "options": [
         {
           "text": "Option 1",
-          "nextQuestionId": null
+          "nextQuestionId": null,
+          "color": "border-green-500"
         },
         {
           "text": "Option 2",
-          "nextQuestionId": null
+          "nextQuestionId": null,
+          "color": "border-green-500"
         }
       ]
     },
@@ -66,11 +75,13 @@
       "options": [
         {
           "text": "Option 1",
-          "nextQuestionId": null
+          "nextQuestionId": null,
+          "color": "border-green-500"
         },
         {
           "text": "Option 2",
-          "nextQuestionId": null
+          "nextQuestionId": null,
+          "color": "border-green-500"
         }
       ]
     }
