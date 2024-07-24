@@ -1,16 +1,76 @@
 {
   "questions": [
     {
-      "id": 1,
-      "text": "Que te gustaria jugar?",
+      "id": "what-would-you-like-to-play",
+      "text": "What would you like to play?",
       "options": [
         {
-          "id": 1,
           "text": "Melee",
-          "question": "really dont",
-          "options": [
-            "ok"
-          ]
+          "nextQuestionId": "do-you-really-not-like-it"
+        },
+        {
+          "text": "Spell",
+          "nextQuestionId": "question-for-spell-option"
+        },
+        {
+          "text": "Minion",
+          "nextQuestionId": "question-for-minion-option"
+        },
+        {
+          "text": "Range",
+          "nextQuestionId": "question-for-range-option"
+        }
+      ]
+    },
+    {
+      "id": "do-you-really-not-like-it",
+      "text": "Do you really not like it?",
+      "options": [
+        {
+          "text": "Ok",
+          "nextQuestionId": null
+        }
+      ]
+    },
+    {
+      "id": "question-for-spell-option",
+      "text": "Question for Spell option",
+      "options": [
+        {
+          "text": "Option 1",
+          "nextQuestionId": null
+        },
+        {
+          "text": "Option 2",
+          "nextQuestionId": null
+        }
+      ]
+    },
+    {
+      "id": "question-for-minion-option",
+      "text": "Question for Minion option",
+      "options": [
+        {
+          "text": "Option 1",
+          "nextQuestionId": null
+        },
+        {
+          "text": "Option 2",
+          "nextQuestionId": null
+        }
+      ]
+    },
+    {
+      "id": "question-for-range-option",
+      "text": "Question for Range option",
+      "options": [
+        {
+          "text": "Option 1",
+          "nextQuestionId": null
+        },
+        {
+          "text": "Option 2",
+          "nextQuestionId": null
         }
       ]
     }
