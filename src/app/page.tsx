@@ -4,7 +4,7 @@ import data from "../../data.json";
 
 export default function Home() {
   return (
-    <PlausibleProvider domain="build-recomendation-fsxic5rbr-bksins-projects.vercel.app/">
+    <PlausibleProvider domain="https://build-recomendation.vercel.app/">
       <main className="flex min-h-screen flex-col items-center justify-center p-24 gap-y-20">
         <h1>3.25 Build Recomendation</h1>
         <h2>Choose your shit</h2>
