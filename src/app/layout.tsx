@@ -3,6 +3,7 @@ import "./globals.css";
 
 import PlausibleProvider from "next-plausible";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <PlausibleProvider domain="https://build-recomendation.vercel.app/" />
+        <Script
+          defer
+          data-domain="build-recomendation.vercel.app"
+          src="https://plausible.io/js/script.js"
+        ></Script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
