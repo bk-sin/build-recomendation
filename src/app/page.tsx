@@ -1,7 +1,6 @@
 import data from "../../data.json";
 
 export default function Home() {
-  console.log(data);
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 gap-y-20">
       <h1>3.25 Build Recomendation</h1>
