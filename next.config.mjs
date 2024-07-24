@@ -1,17 +1,8 @@
+import { withPlausibleProxy } from "next-plausible";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
-    return [
-      {
-        source: "/js/script.js",
-        destination: "https://plausible.io/js/script.js",
-      },
-      {
-        source: "/api/event", // Or '/api/event/' if you have `trailingSlash: true` in this config
-        destination: "https://plausible.io/api/event",
-      },
-    ];
-  },
+  // Your Next.js configuration options
 };
 
-export default nextConfig;
+export default withPlausibleProxy()(nextConfig);
